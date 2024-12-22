@@ -1,0 +1,28 @@
+<div class="container container-jogo">
+  <h1 class="titulo.jogo">Jogo das Bandeiras</h1>
+
+  <!-- Tela Inicial -->
+  <div *ngIf="mostrarTelaInicial" class="tela-inicial">
+    <p>Tente acertar o país correspondente à bandeira exibida!</p>
+    <button class="btn btn-primary" (click)="iniciarJogo()">Iniciar Jogo</button>
+  </div>
+
+  <!-- Tela do Jogo -->
+  <div *ngIf="!mostrarTelaInicial && paisAtual" class="tela-jogo">
+    <img [src]="paisAtual?.flagPng" alt="Bandeira" class="flag"/>
+
+    <div class="informacoes-jogo">
+      <p id="contador" class="contador-texto">Acertos: {{ contadorAcertos }}</p>
+      <input type="text" [(ngModel)]="respostaUsuario" placeholder="Digite o nome do país" class="input-resposta" (keyup.enter)="confirmarResposta()" [disabled]="exibirBotaoReiniciar"/>
+      <input type="text" value="Confirmar" class="btn btn-primary" (click)="confirmarResposta()" [disabled]="exibirBotaoReiniciar">
+    </div>
+  </div>
+
+  <!-- Mensagem de Resposta -->
+  <div *ngIf="mensagemResposta" class="mensagem-resposta">
+    <p [innerHTML]="mensagemResposta">{{ mensagemResposta }}</p>
+    <button *ngIf="exibirBotaoReiniciar" (click)="voltarParaInicio(); reiniciarJogo()" (keyup.enter)="voltarParaInicio(); reiniciarJogo()" class="btn btn-primary btn-reiniciar">
+      Voltar ao Início
+    </button>
+  </div>
+</div>

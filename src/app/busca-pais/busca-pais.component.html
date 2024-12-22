@@ -1,0 +1,29 @@
+<div class="form1">
+  <form [formGroup]="formBusca">
+      <label for="nome" class="form-label">Nome: </label>
+      <input type="text" class="form-control" name="nome" id="nome" formControlName="nome">
+      <input type="submit" class="btn btn-primary mt-3" value="Buscar" [disabled]="formBusca.invalid" (click)="buscar()">
+      <input type="button" class="btn btn-primary mt-3 mx-2" value="Aleatório" (click)="sortearPais()">
+  </form>
+</div>
+
+<div *ngIf="paises.length === 0 && pesquisaFeita" class="alert alert-warning mt-3">
+  Nenhum resultado encontrado. Verifique o nome digitado e tente novamente.
+</div>
+
+<div *ngIf="paises.length > 0" class="d-flex flex-wrap cards-container">
+  <div *ngFor="let p of paises" class="card principal" style="width: 15rem;">
+    <img [src]="p.flagPng" class="card-img-top" alt="Bandeira">
+    <div class="card-body">
+      <h5 class="card-title">{{ p.name }}</h5>
+      <ul class="card-text">
+        <li>Capital: {{ p.capital?.join(', ') || 'Não disponível' }}</li>
+        <li>Continente: {{ p.continent || 'Não disponível' }}</li>
+        <li>Língua(s): {{ p.languages || 'Não disponível' }}</li>
+        <li>População: {{ p.population | number }}</li>
+        <li>Moeda(s): {{ p.currency || 'Não disponível' }}</li>
+      </ul>
+      <a [href]="p.googleMapsLink" target="_blank" class="btn btn-info">Ver no Google Maps</a>
+    </div>
+  </div>
+</div>
