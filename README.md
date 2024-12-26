@@ -27,4 +27,4 @@ Este projeto foi desenvolvido para consolidar os conhecimentos adquiridos na dis
 - Criação de *aplicações interativas* e educativas
 - Aplicação de *design responsivo*
 
-# *Nota: este repositório foi criado exclusivamente para fins acadêmicos.*
+> *Nota: este repositório foi criado exclusivamente para fins acadêmicos.*
