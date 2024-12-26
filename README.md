@@ -5,11 +5,11 @@ A aplicação está disponível online e pode ser acessada pelo link: [InfoMundi
 
 ## Tecnologias utilizadas
 
-• Angular
-• TypeScript
-• HTML e CSS
-• Bootstrap
-• API REST
+  • Angular
+  • TypeScript
+  • HTML e CSS
+  • Bootstrap
+  • API REST
 
 ## Como executar localmente
 
@@ -22,9 +22,9 @@ A aplicação está disponível online e pode ser acessada pelo link: [InfoMundi
 
 Este projeto foi desenvolvido para consolidar os conhecimentos adquiridos na disciplina, com foco em:
 
-• Práticas de *desenvolvimento front-end*
-• *Consumo de APIs REST* para manipulação de dados
-• Criação de *aplicações interativas* e educativas
-• Aplicação de *design responsivo*
+  • Práticas de *desenvolvimento front-end*
+  • *Consumo de APIs REST* para manipulação de dados
+  • Criação de *aplicações interativas* e educativas
+  • Aplicação de *design responsivo*
 
-## Este repositório foi criado exclusivamente para fins acadêmicos.
+*Nota: este repositório foi criado exclusivamente para fins acadêmicos.*
