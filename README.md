@@ -1,7 +1,7 @@
 # InfoMundi
 
 Este repositório contém o código-fonte do InfoMundi, uma aplicação desenvolvida como projeto final da disciplina **Programação para Internet** no Instituto Federal do Rio Grande do Norte (**IFRN**). A aplicação tem como objetivo permitir que os usuários adquiram conhecimento sobre os países do mundo e testem suas habilidades de forma interativa.
-A aplicação está disponível online e pode ser acessada pelo link: [InfoMundi](https://info-mundi.vercel.app/).
+**A aplicação está disponível online e pode ser acessada pelo link: [InfoMundi](https://info-mundi.vercel.app/).**
 
 ## Tecnologias utilizadas
 
